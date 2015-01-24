@@ -89,7 +89,6 @@ public class AdicionarClienteActivity extends Activity implements Runnable{
                 Cliente cliente = new Cliente();
                 cliente.setId(id);
                 cliente.setNome(nome);
-                // instanciar DAO e fazer insert do cliente
                 returnIntent.putExtra("cliente",cliente);
                 setResult(id,returnIntent);
                 finish();

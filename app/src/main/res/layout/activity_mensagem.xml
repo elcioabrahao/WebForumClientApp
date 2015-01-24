@@ -1,0 +1,35 @@
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@android:id/list" />
+
+        <TableLayout
+            android:layout_weight="0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <EditText android:id="@+id/novaMensagem"
+                    android:layout_height="150dp"
+                    android:singleLine="false"
+                    android:background="#EED29B"
+                    android:gravity="top"
+                    android:layout_width="250dp"
+                    android:layout_alignParentTop="true"
+                    />
+
+                <Button android:layout_height="wrap_content"
+                    android:id="@+id/buttonEnviar"
+                    android:text="Enviar"
+                    android:layout_width="wrap_content"
+                    />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
